@@ -10,6 +10,17 @@ namespace practiceapp
     {
         static void Main(string[] args)
         {
+
+            int[] nums = new int[] {1,2,3,4,5};
+
+            foreach (int i in nums)
+            {
+                Console.WriteLine(i);
+            }
+           
+
+            Console.ReadLine();
+
         }
     }
 }
