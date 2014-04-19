@@ -18,7 +18,6 @@ namespace practiceapp
                 Console.WriteLine(i);
             }
            
-
             Console.ReadLine();
 
         }
