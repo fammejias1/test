@@ -32,6 +32,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AppLimit.CloudComputing.SharpBox">
+      <HintPath>..\packages\AppLimit.CloudComputing.SharpBox.1.2.0.542\lib\net40-full\AppLimit.CloudComputing.SharpBox.dll</HintPath>
+    </Reference>
+    <Reference Include="AppLimit.CloudComputing.SharpBox.ExperimentalProvider">
+      <HintPath>..\packages\AppLimit.CloudComputing.SharpBox.1.2.0.542\lib\net40-full\AppLimit.CloudComputing.SharpBox.ExperimentalProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="AppLimit.CloudComputing.SharpBox.MockProvider">
+      <HintPath>..\packages\AppLimit.CloudComputing.SharpBox.1.2.0.542\lib\net40-full\AppLimit.CloudComputing.SharpBox.MockProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="DropBoxTokenIssuer">
+      <HintPath>..\packages\AppLimit.CloudComputing.SharpBox.1.2.0.542\lib\net40-full\DropBoxTokenIssuer.exe</HintPath>
+    </Reference>
+    <Reference Include="DropNet">
+      <HintPath>..\..\DropNet\DropNet\bin\Debug\DropNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net40">
+      <HintPath>..\packages\AppLimit.CloudComputing.SharpBox.1.2.0.542\lib\net40-full\Newtonsoft.Json.Net40.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

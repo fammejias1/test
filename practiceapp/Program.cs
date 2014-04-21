@@ -4,16 +4,31 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using DropNet;
+using AppLimit.CloudComputing.SharpBox;
+using AppLimit.CloudComputing.SharpBox.StorageProvider.DropBox;
 
 namespace practiceapp
 {
     class Program
     {
+        private static const 
         static void Main(string[] args)
         {
 
             //intArrayList();
-            ComparePasswordsWithHash();
+            //ComparePasswordsWithHash();
+            TestDropBoxWithSharpBox();
+
+        }
+
+        /// <summary>
+        /// Use a third party software to communicate with dropbox.
+        /// </summary>
+        private static void TestDropBoxWithSharpBox()
+        {
+            CloudStorage dropBoxStorage = new CloudStorage();
+            var dropBoxConfig = CloudStorage.GetCloudConfigurationEasy(nSupportedCloudConfigurations.DropBox);
 
         }
 
